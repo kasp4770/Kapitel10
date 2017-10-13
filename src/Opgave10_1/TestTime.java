@@ -11,14 +11,13 @@ public class TestTime {
 
         Time time1 = new Time();
         time1.setTime(System.currentTimeMillis());
-        
-        System.out.println("Nuværende klokkeslæt for time1: ");
+
+        //System.out.println("Nuværende klokkeslæt for time1: ");
         //System.out.printf(time1.getHour() + ":" + time1.getMinute() + ":", time1.getSecond()); //normal println
 
         //System.out.format metode. For at undgå at der kun er ét decimal når endten time, minut eller sekund er <10.
-        System.out.printf("%02d:"+ "%02d:"+ "%02d", time1.getHour(), time1.getMinute(), time1.getSecond()); //printf
-
-
+        System.out.printf("Nuværende klokkeslæt for time1: %n%02d:%02d:%02d"
+                , time1.getHour(), time1.getMinute(), time1.getSecond()); //printf
 
         System.out.println();
 
