@@ -1,5 +1,17 @@
 package Opgave10_1;
-
+/*          UML
+    Time.java
+    - hour: long
+    - minute: long
+    - second: long
+    + Time()
+    + Time(elapseTime: long)
+    + Time(hour: long, minute: long, second: long)
+    + getHour(): long
+    + getMinute(): long
+    + getSecond(): long
+    + setTime(long): void
+*/
 public class Time {
 
     //Datafields
@@ -9,9 +21,11 @@ public class Time {
 
     //no-arg constructor
     public Time(){
+
     }
 
-    //Constructor med en specificeret tid sat ud fra milisekunder siden 1. januar 1970 (setTime metode)
+    /*Constructor med en specificeret tid sat ud fra milisekunder siden 1. januar 1970 (setTime metode), som
+    konverteres til timer, minutter og sekunder ved hjælp af setTime() metoden.*/
     public Time(long elapseTime){
         setTime(elapseTime);
     }
